@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Lecture</title>
+</head>
+
+<body>
+    <h1>Form for TA</h1>
+    <form action="post">
+        <label for="username">Enter you name</label>
+
+        <div>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+        </div>
+
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <!-- dono ka name same h isiliye koi ek he select hoga -->
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+
+        <div>
+            <label for="comment">Enter your comment</label>
+            <!-- br tag use is not recommended -->
+            <br> <!-- line break tag -->
+            <textarea name="comment" id="comment" rows="4" cols="30"></textarea>
+        </div>
+
+        <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="mango">Mango</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
