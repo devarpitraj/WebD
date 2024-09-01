@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            color: blueviolet;
+        }
+
+        .box1{
+            background-color: aquamarine;
+            padding: 2px;
+            margin: 30px;
+            border: 6px solid blue;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+        .box2{
+            background-color: black;
+            padding: 2px;
+            margin: 20px;
+            border: 6px solid black;
+            height: 200px;
+            box-sizing: border-box; /*this makes the given element height or width inclusive of padding and border*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+
+    <img src="margin collapse.png" alt="Margin Collapse">
+</body>
+</html>

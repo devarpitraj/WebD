@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /*Element Selector*/
+        div{
+            color: brown;
+        }
+
+        /*class selector*/
+        .red{
+            background-color: red;
+        }
+
+        /*id selector*/
+        #green{
+            background-color: green;
+        }
+
+        /*child selector*/
+        div > p {
+            color: aquamarine;
+            background-color: blueviolet;
+        }
+
+        /*Descendant Selector*/
+        div p {
+            color: black;
+            background-color: brown;
+        }
+
+        /*universal selector*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /*Pseudo Selector*/
+        a:visited{
+            color: green;
+        }
+
+        a:active{
+            color: red;
+        }
+
+        a:link{
+            color: brown;
+        }
+
+        a:hover{
+            background-color: black;
+        }
+
+        /*p:first-child{
+            background-color: darkgoldenrod;
+        }*/
+    </style>
+</head>
+<body>
+    <div class="red">
+        I am a div
+        <p>I am a para inside div - direct child to div</p>
+
+        <article>
+            <p>I am para inside article inside div - Not a direct child to div - Descendant of div</p>
+        </article>
+    </div>
+
+    <div id="green">
+        I am another div
+    </div>
+
+    <a href="https://google.com">Go to google</a>
+    <a href="https://codewithharry.com">Go to codewithharry</a>
+</body>
+</html>

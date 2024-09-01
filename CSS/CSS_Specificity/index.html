@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        /*The specificity value is 1*/
+        h1{
+            color: aqua;
+        }
+
+        /*The specificity value is 1 + 10 = 11*/
+        h1.yellow{
+            color: yellow;
+        }
+
+        /*.cpurple{
+            color: purple !important;
+        }*/
+
+        /*The specificity value is 10*/
+        .cred{
+            color: red;
+        }
+
+        /*Example of attribute selector. The specificity value is 1*/
+        /*[data-x=a] {
+            color: darkolivegreen;
+        }*/
+        
+        /*Quick Quiz*/
+        /* The specificity value is 1(a -> element) + 10(harry -> class) + 10 (rohan -> class) + 10(href -> attribute) + 10(hover -> pseudo-class) = 41 */
+        a.harry.rohan[href]:hover{
+            color: forestgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="yellow cred cpurple">CSS Specificity</h1>
+    <div>
+        <nav>
+            <h2 data-x = "a">The Cascade Algorithm</h2>
+            <ol>
+                <li>Position and order of appearance : same selectors me se last wala apply hoga (above 3no class me se jo last me hoga wo apply hoga)</li>
+                <li>Specificity : Inline Style(1000) > ID selector(100) > Class or Attribute selector(10) > element selector(1) > universal selector(0)</li>
+                <li>Origin : default stylesheet gets overriden by defined stylesheet</li>
+                <li>Importance : if !important is specified then it is must to apply that</li>
+            </ol>
+        </nav>
+    </div>
+</body>
+</html>
