@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            font-size: 19px;
+        }
+
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /*width: 1525px;*/
+            width: 40vw; /*vw - viewport width*/
+            height: 20vh; /*vh - viewport height*/
+            margin: auto; /*This is used to set margin from left and right. This can only be done with box elements*/
+            background-color: aquamarine;
+        }
+
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /*width: 1525px;*/
+            width: 40vw;
+            /*height: 80vh; /*vh - viewport height*/
+            min-height: 80vh; /*min height 80vh regardless utna content h ya nhi*/
+            margin: 23px/*This is for up down margin*/ auto;
+            background-color: aquamarine;
+
+            /*font-size: 20px;*/
+        }
+
+        .container p {
+            font-size: 2em; /*2 times the inherited font size i.e. 20px and by default is 16px*/
+
+            /*font-size: 3rem; /*3 times the size of root i.e. 19px and by default is 16px*/
+
+            width: 50%; /*parent ki 50% width apply hoga*/
+        }
+        
+        .mycontainer{
+            background-color: red;
+            color: yellow;
+            font-size: 22px;
+            width: 100vmin; /* vmin - height or width me se jo min hoga vmin wo hajega
+            jaise is case me desktop pe height min hota h isiliye vmin vh hojaega
+            vmax - isme phone me width min hoti h isliye vmax vw hojaega and desktop me height min hoti h isiliye vmax vh hojaega */
+        }
+
+        .parent{
+            box-sizing: border-box;
+            border: 2px solid red;
+            width: 80vw;
+            margin: auto;
+        }
+
+        .parent > div{
+            border: 2px solid yellow;
+            width: 50%;
+        }
+
+        .parent > div > p{
+            border: 2px solid blue;
+            width: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">This is a box</div>
+
+    <div class="container">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam veniam maxime dolorum minima esse eos nostrum. Quod pariatur quasi beatae nulla quis ipsum explicabo fuga enim dolorum! Temporibus laudantium quisquam aperiam quasi suscipit aliquid nemo dolorum numquam atque autem. Suscipit autem molestiae nulla facere, et voluptates delectus ratione maiores. Molestias architecto animi sint, assumenda laboriosam vel?
+        </p>
+    </div>
+
+    <div class="parent">
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime dolores soluta, perspiciatis a nihil enim nulla dignissimos? Neque quisquam impedit eligendi iste hic debitis. Quos voluptas doloremque inventore itaque. Sit hic magni aspernatur dicta adipisci cumque incidunt rerum officiis quisquam error asperiores pariatur rem, porro deserunt, omnis necessitatibus iusto quaerat!
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, aspernatur ipsa! Iste incidunt architecto nemo eligendi. Facere ratione nam quos.</p>
+        </div>
+    </div>
+
+    <div class="mycontainer">
+        I am another container.
+    </div>
+</body>
+</html>
