@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows and Outlines</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding: 25px;
+            box-shadow: 5px 15px 5px #888888;
+        }
+
+        .text{
+            text-shadow: 2px 2px 4px black;
+            outline: 2px solid blue; /*outline border ke bahar hota h*/
+            border: 3px solid red;
+            outline-offset: 4px; /*distance of outline border ke saath ye nhi kr skte h*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+
+    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat rerum vero sed, architecto eius asperiores, quos laboriosam provident laudantium quaerat vel incidunt est. Unde, accusamus.
+    </p>
+    <a href="https://www.codewithharry.com/tutorial/css-shadows/#:~:text=Differences%20between%20Outlines%20and%20Borders%3A">Difference between outline and shadow</a>
+</body>
+</html>

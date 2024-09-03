@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            border: 2px solid blue;
+            display: inline;
+            /*inline h isiliye top se margin ya padding nhi lgega
+            also width bhi apply nhi hoga*/
+            padding: 45px; 
+            margin: 65px;
+            width: 344px;
+            /*display: inline-block; /*ye use krne se apply hoga*/
+        }
+
+        .box1{
+            /*display: none;*/ /*sb kuch gayab hojaega*/
+            /*visibility: hidden;*/ /*space rhega but kuch display nhi hoga*/
+        }
+    </style>
+</head>
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    <div class="box box1">I am a box</div>
+    <div class="box">I am also a box</div>
+    <span>I am a good </span>
+    <span>inline</span>
+
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">CSS Display</a>
+</body>
+</html>
