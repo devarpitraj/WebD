@@ -1,9 +1,17 @@
-.change{
-    background-color: bisque;
-    color: brown;
-}
-
 p{
     background-color: blue;
+    color: pink;
+}
+
+div p:first-child{
+    background-color: yellow;
     color: red;
+}
+
+div p:nth-child(2) {
+    background-color: hotpink;
+}
+
+div p:not(:first-child) {
+    font-family: 'Courier New', Courier, monospace;
 }
