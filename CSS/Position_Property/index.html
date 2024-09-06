@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            background-color: aqua;
+            /*position: relative;
+            /*z-index: 1;*/
+
+            position: absolute; /*nearest positioned ancestor ke according position hota h*/
+            top: 0px;
+            left: 90px;
+
+            /*position: sticky; /*sticks to its position everything goes behind it when scrolled just like navigation bar*/
+            top: 0px;
+        }
+
+        .box2 {
+            background-color: blue;
+            /*position: relative;
+            top: -34px;
+            left: 13px;*/
+        }
+
+        .box3 {
+            background-color: brown;
+            /*position: fixed; /*position gets fixed on the screen*/
+            /*top: 150px;
+            left: 500px;*/
+        }
+
+        .box4 {
+            background-color: aquamarine;
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 60vh;
+            width: 60vw;
+            margin: 3px;
+            padding: 2px;
+        }
+
+        .parent{
+            border: 2px solid purple;
+            margin: 43px;
+            padding: 34px;
+            /*position: relative;*/
+
+            /* Exception : transform, filter or perspective properties can also make an element appear as positioned. Thus, position : absolute can apply according to this even if the ancestor is specifically positioned*/
+            /*transform: translate(0);*/
+            /*filter: invert(0);*/
+            perspective: 0em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>
