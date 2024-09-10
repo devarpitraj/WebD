@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS selectors</title>
+    <style>
+        /*.box:first-child{
+            background-color: aqua;
+        }
+
+        .box:nth-child(2)::first-line{
+            color: red;
+        }
+
+        .boxes *{
+            color: blueviolet;
+            border: 2px solid black;
+        }*/
+
+        /*Attribute Selector*/
+        /*[data-color="primary"]{
+            padding: 45px;
+        }*/
+
+        /*Group selectors*/
+        /*p, a, .box {
+            margin: 29px;
+        }*/
+
+        /*.box:nth-child(odd) {
+            background-color: blueviolet;
+        }
+
+        .box:nth-last-child(1) { /*from last*//*
+            color:aqua;
+        }*/
+
+        .boxes::before{
+            content: "This is dynamic insertion through CSS(before)";
+            color: red;
+        }
+
+        .boxes::after{
+            content: "This is dynamic insertion through CSS(after)";
+            color: blue;
+        }
+
+        /*user selected elements pe apply hoga*/
+        ::selection{
+            background-color: black;
+            color: aqua;
+        }
+
+        .box::first-letter{
+            color: blue;
+        }
+
+        input::placeholder{
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">I am a box</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aspernatur debitis nam, unde nulla ab tempore non recusandae perferendis eaque?</div>
+        <div class="box">I am a box</div>
+    </div>
+    <input type="text" placeholder="Type your Name">
+</body>
+</html>
