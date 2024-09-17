@@ -1,0 +1,22 @@
+.container{
+    height: 634px;
+    width: 688px;
+    border: 2px solid black;
+    /* background-color: azure; */
+    background-position: top right;
+    background-image: url(https://preview.redd.it/zfohxnf8t3pa1.jpg?width=1024&format=pjpg&auto=webp&v=enabled&s=0f660e0a56476991ee3b97f2885d8c010fec5b97);
+
+    background-repeat: no-repeat; /*by default image repeats itself when width or height of the image is small, this property is used to prevent that*/
+}
+
+img{
+    width: 688px;
+    height: 634px;
+    /* object-fit: contain; */
+    /* object-fit: cover;
+    object-position: top right; */
+    /* object-fit: fill; */
+
+    /* object-fit: contain;
+    object-position: 10px 20px; */
+}

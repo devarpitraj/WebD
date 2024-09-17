@@ -1,0 +1,11 @@
+.img1{
+    filter: brightness(150%) contrast(0.75) drop-shadow(16px 16px 20px red);
+}
+
+.img2{
+    filter: blur(2px) invert(1);
+}
+
+.img3{
+    filter: grayscale(75%);
+}

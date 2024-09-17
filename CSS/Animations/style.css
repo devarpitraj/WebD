@@ -1,0 +1,50 @@
+.container{
+    background-color: burlywood;
+    width: 50vw;
+    height: 80vh;
+}
+
+.box{
+    background-color: aqua;
+    height: 40px;
+    width: 80px;
+    /* animation-name: apnaAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: apnaAnimation 1s ease-in-out 1s infinite reverse; */
+    /* animation: apnaAnimation 2s ease 1s 1 alternate forwards; */
+    animation: apnaAnimation 3s ease-in-out 1s infinite,
+                apna2 3s ease-in 0s infinite;
+}
+
+@keyframes apnaAnimation {
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: yellow;
+        transform: translateX(1000px);
+    }
+}
+
+@keyframes apna2 {
+    0%{
+        transform: rotate(60deg);
+    }
+    20%{
+        transform: rotate(120deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    80%{
+        transform: rotate(240deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
