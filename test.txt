@@ -1,3 +1,0 @@
-hello coders
-this is vim
-hi
